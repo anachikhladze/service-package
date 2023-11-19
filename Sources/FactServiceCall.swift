@@ -7,10 +7,10 @@
 
 import Foundation
 
-final class FactService {
+public final class FactService {
     static let shared = FactService ()
     
-    private init() {}
+    public init() {}
     
     func fetchFacts(completion: @escaping (Result<[Fact], Error>) -> Void) {
         let urlStr = "https://catfact.ninja/facts?limit=20"
