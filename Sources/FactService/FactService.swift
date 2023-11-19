@@ -2,11 +2,11 @@ import Foundation
 
 public class FactService {
     public struct FactModel: Decodable {
-        let data: [Fact]
+        public let data: [Fact]
     }
     
     public struct Fact: Decodable {
-        let fact: String
+        public let fact: String
     }
     
     
