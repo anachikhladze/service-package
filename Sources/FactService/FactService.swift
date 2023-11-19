@@ -1,15 +1,6 @@
 import Foundation
 
 public class FactService {
-    public struct FactModel: Decodable {
-        public let data: [Fact]
-    }
-    
-    public struct Fact: Decodable {
-        public let fact: String
-    }
-    
-    
     public static let shared = FactService ()
     
     public init() {}
@@ -42,4 +33,12 @@ public class FactService {
             }
         }.resume ()
     }
+}
+
+public struct FactModel: Decodable {
+    public let data: [Fact]
+}
+
+public struct Fact: Decodable {
+    public let fact: String
 }
