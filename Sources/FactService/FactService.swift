@@ -1,11 +1,11 @@
 import Foundation
 
-public final class FactService {
-    struct FactModel: Decodable {
+public class FactService {
+    public struct FactModel: Decodable {
         let data: [Fact]
     }
     
-    struct Fact: Decodable {
+    public struct Fact: Decodable {
         let fact: String
     }
     
