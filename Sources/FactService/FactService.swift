@@ -10,7 +10,7 @@ public final class FactService {
     }
     
     
-    static let shared = FactService ()
+    public static let shared = FactService ()
     
     public init() {}
     
