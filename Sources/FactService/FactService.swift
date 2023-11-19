@@ -14,7 +14,7 @@ public final class FactService {
     
     public init() {}
     
-    func fetchFacts(completion: @escaping (Result<[Fact], Error>) -> Void) {
+    public func fetchFacts(completion: @escaping (Result<[Fact], Error>) -> Void) {
         let urlStr = "https://catfact.ninja/facts?limit=20"
         
         
