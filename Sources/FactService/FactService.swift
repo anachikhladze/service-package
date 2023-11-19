@@ -1,6 +1,6 @@
 import Foundation
 
-public class FactService {
+public final class FactService {
     public static let shared = FactService ()
     
     public init() {}
